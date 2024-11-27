@@ -56,7 +56,7 @@ export async function POST(request) {
       profilePic: pic.url,
     });
 
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SEC, {
+    const token = jwt.sign({ id: user._id }, process.env.JWTSEC, {
       expiresIn: "5d",
     });
 

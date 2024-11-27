@@ -24,7 +24,7 @@ export async function POST(req) {
         }
       );
 
-    const token = jwt.sign({ email }, process.env.Forgot_sec);
+    const token = jwt.sign({ email }, process.env.Forgotsec);
 
     const data = { email, token };
 

@@ -12,7 +12,7 @@ export async function POST(req) {
 
     const token = searchParams.get("token");
 
-    const decodedData = jwt.verify(token, process.env.Forgot_sec);
+    const decodedData = jwt.verify(token, process.env.Forgotsec);
 
     const user = await User.findOne({ email: decodedData.email });
 

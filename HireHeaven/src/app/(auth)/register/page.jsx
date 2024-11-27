@@ -115,7 +115,7 @@ const Register = () => {
                     <Label>Resume</Label>
                     <Input
                       type="file"
-                      accept="application/pdf"
+                      accept="image/*"
                       onChange={(e) => setresume(e.target.files[0])}
                     />
                     <Label>Bio</Label>
